@@ -3,12 +3,12 @@
  * Author:  Damian Suess
  * File:    SqlcipherEngine.cs
  * Description:
- *  LiteMigrator using the SQLCipher engine
+ *  Lite.Migrator using the SQLCipher engine
  */
 
-using LiteMigrator.Versioning;
+using Lite.Migrator.Versioning;
 
-namespace LiteMigrator.Engines;
+namespace Lite.Migrator.Engines;
 
 internal class SqlcipherEngine : IEngine
 {

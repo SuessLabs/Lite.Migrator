@@ -9,9 +9,9 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
-using LiteMigrator.SystemTests.TestData;
+using Lite.Migrator.SystemTests.TestData;
 
-namespace LiteMigrator.SystemTests.Specs.SqliteTests
+namespace Lite.Migrator.SystemTests.Specs.SqliteTests
 {
   [TestClass]
   public class RawLocalDatabaseTest

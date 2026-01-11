@@ -1,6 +1,6 @@
 using System.IO;
 
-namespace LiteMigrator.SystemTests;
+namespace Lite.Migrator.SystemTests;
 
 [TestClass]
 public class BaseTest

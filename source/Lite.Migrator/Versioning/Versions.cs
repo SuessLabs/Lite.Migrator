@@ -9,7 +9,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace LiteMigrator.Versioning;
+namespace Lite.Migrator.Versioning;
 
 public class Versions : IVersions
 {

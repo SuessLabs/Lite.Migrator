@@ -1,19 +1,19 @@
 /* Copyright Xeno Innovations, Inc. 2019
  * Date:    2019-9-28
  * Author:  Damian Suess
- * File:    LiteMigratorFactoryTests.cs
+ * File:    Lite.MigratorFactoryTests.cs
  * Description:
- *  LiteMigrator Factory Tests
+ *  Lite.Migrator Factory Tests
  */
 
 using System.Reflection;
 
-namespace LiteMigrator.SystemTests.Specs;
+namespace Lite.Migrator.SystemTests.Specs;
 
 [TestClass]
-public class LiteMigratorFactoryTests : BaseTest
+public class FactoryTests : BaseTest
 {
-  private const string BaseNamespace = "LiteMigrator.SystemTests.TestData.Scripts";
+  private const string BaseNamespace = "Lite.Migrator.SystemTests.TestData.Scripts";
   private const string ScriptFullName = "201909150000-BaseDDL.sql";
   private const string ScriptName = "BaseDDL";
   private const long ScriptRevision = 201909150000;

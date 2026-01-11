@@ -8,7 +8,7 @@
 
 using System;
 
-namespace LiteMigrator.Versioning;
+namespace Lite.Migrator.Versioning;
 
 public interface IMigration
 {

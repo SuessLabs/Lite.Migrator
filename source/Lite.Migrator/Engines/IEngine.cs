@@ -6,9 +6,9 @@
  *  LiteMigration Engine implementation
  */
 
-using LiteMigrator.Versioning;
+using Lite.Migrator.Versioning;
 
-namespace LiteMigrator.Engines;
+namespace Lite.Migrator.Engines;
 
 internal interface IEngine
 {

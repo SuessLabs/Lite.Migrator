@@ -1,9 +1,9 @@
 /* Copyright Xeno Innovations, Inc. 2019
  * Date:    2019-9-28
  * Author:  Damian Suess
- * File:    LiteMigratorVersionInfoTests.cs
+ * File:    Lite.MigratorVersionInfoTests.cs
  * Description:
- *  LiteMigrator Tests
+ *  Lite.Migrator Tests
  *
  * Note:
  * 1. These tests are flaky and need updated. A database may not be created
@@ -14,16 +14,16 @@
 
 using System.Threading.Tasks;
 using SQLite;
-using LiteMigrator;
-using LiteMigrator.DataObjects;
-using LiteMigrator.Versioning;
+using Lite.Migrator;
+using Lite.Migrator.DataObjects;
+using Lite.Migrator.Versioning;
 
-namespace LiteMigrator.SystemTests.Specs
+namespace Lite.Migrator.SystemTests.Specs
 {
-  /// <summary>LiteMigrator Tests.</summary>
+  /// <summary>Lite.Migrator Tests.</summary>
   [TestCategory("Database")]
   [TestClass]
-  public class LiteMigratorVersionInfoTests : BaseTest
+  public class VersionInfoTests : BaseTest
   {
     /// <summary>
     /// Gets or sets the test context which provides

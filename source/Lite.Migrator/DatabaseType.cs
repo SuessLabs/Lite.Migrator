@@ -6,7 +6,7 @@
  *  DatabaseType
  */
 
-namespace LiteMigrator;
+namespace Lite.Migrator;
 
 /// <summary>Database connection type.</summary>
 public enum DatabaseType

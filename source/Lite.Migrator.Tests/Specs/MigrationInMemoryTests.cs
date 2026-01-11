@@ -9,12 +9,12 @@
 using System.Reflection;
 using System.Threading.Tasks;
 
-namespace LiteMigrator.SystemTests.Specs;
+namespace Lite.Migrator.SystemTests.Specs;
 
 [TestClass]
 public sealed class MigrationInMemoryTests : BaseTest
 {
-  private const string ScriptNamespace = "LiteMigrator.SystemTests.TestData.Scripts";
+  private const string ScriptNamespace = "Lite.Migrator.SystemTests.TestData.Scripts";
 
   [TestMethod]
   [DataRow(false)]

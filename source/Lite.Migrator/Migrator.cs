@@ -8,14 +8,14 @@
 
 using System;
 using System.Reflection;
-using LiteMigrator.Factory;
+using Lite.Migrator.Factory;
 using SQLite;
 
-namespace LiteMigrator;
+namespace Lite.Migrator;
 
 /// <summary>LiteMigration core system.</summary>
 /// <remarks>
-///  1. Rename class to LiteMigrator, this may conflict with namespace.
+///  1. Rename class to Lite.Migrator, this may conflict with namespace.
 ///  2. Refactor order of constructor properties (making all of them sequential).
 ///  3. Make disposable, exposing the SQLite DB object. - In-Memory tests will fail once connection is closed.
 /// </remarks>

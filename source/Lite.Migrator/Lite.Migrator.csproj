@@ -10,11 +10,11 @@
     <Copyright>Copyright 2019-2026 Xeno Innovations, Inc.</Copyright>
 
     <Product>Lite.Migrator</Product>
-    <Description>Lite.Migrator is a tiny cross-platform SQLite Migration framework. Built for use with .NET MAUI, Avalonia, Uno, etc. So it needs to be quick, simple with a tiny footprint.</Description>
+    <Description>Lite.Migrator is a tiny cross-platform SQLite Migration framework. Built for scaleability of small to enterprise applications. Great for containers or mobile applications (.NET MAUI, Avalonia, Uno, etc.).</Description>
     <Version>1.0.0.0</Version>
 
     <PackageId>Lite.Migrator</PackageId>
-    <PackageTags>Lite.Migrator, sqlite, lite migrator, database, migration, mobile, light migrator, migrater, xamarin, fluent migrator, database migration, maui, avalonia, uno, linux</PackageTags>
+    <PackageTags>Lite.Migrator, sqlite, lite migrator, database, migration, mobile, light migrator, migrater, xamarin, fluent migrator, database migration, maui, avalonia, uno, linux, xeno, xeno-innovations, suesslabs</PackageTags>
     <PackageProjectUrl>https://github.com/SuessLabs/Lite.Migrator</PackageProjectUrl>
     <PackageIcon>logo.png</PackageIcon>
     <owners>SuessLabs,DamianSuess,xenoinc</owners>

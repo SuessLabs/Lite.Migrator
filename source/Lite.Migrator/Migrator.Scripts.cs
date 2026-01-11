@@ -8,10 +8,10 @@
 
 using System;
 using System.Threading.Tasks;
-using LiteMigrator.DataObjects;
-using LiteMigrator.Factory;
+using Lite.Migrator.DataObjects;
+using Lite.Migrator.Factory;
 
-namespace LiteMigrator;
+namespace Lite.Migrator;
 
 /// <summary>LiteMigration, migration scripts.</summary>
 public partial class Migrator
@@ -171,7 +171,7 @@ public partial class Migrator
     if (hasError)
     {
       // Why did we get an error
-      System.Diagnostics.Debug.WriteLine("LiteMigrator - ERROR - " + LastError);
+      System.Diagnostics.Debug.WriteLine("Lite.Migrator - ERROR - " + LastError);
     }
 
     return !hasError;

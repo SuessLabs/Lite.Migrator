@@ -13,7 +13,7 @@
 
 using System;
 
-namespace LiteMigrator.DataObjects;
+namespace Lite.Migrator.DataObjects;
 
 public interface IVersionInfo
 {

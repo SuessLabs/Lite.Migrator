@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="../build.ps1" />
+    <File Path="../nuget/LiteMigrator.nuspec" />
+    <File Path="../readme.md" />
+    <File Path=".editorconfig" />
+    <File Path="CodeMaid.config" />
+    <File Path="Settings.XamlStyler" />
+    <File Path="StyleCop.Analyzers.ruleset" />
+  </Folder>
+  <Folder Name="/Tests/">
+    <Project Path="Lite.Migrator.Tests/Lite.Migrator.SystemTests.csproj" />
+  </Folder>
+  <Project Path="Lite.Migrator/Lite.Migrator.csproj" />
+</Solution>

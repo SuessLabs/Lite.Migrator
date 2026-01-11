@@ -11,9 +11,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using LiteMigrator.Versioning;
+using Lite.Migrator.Versioning;
 
-namespace LiteMigrator.Factory;
+namespace Lite.Migrator.Factory;
 
 public class MigrationFactory
 {

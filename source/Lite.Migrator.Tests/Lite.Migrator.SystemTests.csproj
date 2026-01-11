@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LiteMigrator\LiteMigrator.csproj" />
+    <ProjectReference Include="..\Lite.Migrator\Lite.Migrator.csproj" />
   </ItemGroup>
 
 </Project>

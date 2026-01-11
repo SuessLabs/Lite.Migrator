@@ -8,7 +8,7 @@
 
 using System.Collections.Generic;
 
-namespace LiteMigrator.Versioning;
+namespace Lite.Migrator.Versioning;
 
 public interface IVersions
 {

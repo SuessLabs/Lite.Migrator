@@ -6,18 +6,18 @@
  *  Maintains the database's version history
  *
  *  Disabled because it's a pain in the ass to sync
- *  the database path with our main LiteMigrator session in-project
+ *  the database path with our main Lite.Migrator session in-project
  */
 
 /*
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using LiteMigrator.DataObjects;
-using LiteMigrator.Versioning;
+using Lite.Migrator.DataObjects;
+using Lite.Migrator.Versioning;
 using SQLite;
 
-namespace LiteMigrator.Factory
+namespace Lite.Migrator.Factory
 {
   public class VersionFactory
   {

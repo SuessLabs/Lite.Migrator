@@ -12,7 +12,7 @@
 
 using System.Text.RegularExpressions;
 
-namespace LiteMigrator.Factory;
+namespace Lite.Migrator.Factory;
 
 public class ParserFactory
 {

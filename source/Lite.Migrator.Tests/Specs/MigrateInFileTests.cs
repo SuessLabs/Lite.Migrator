@@ -1,7 +1,7 @@
 /* Copyright Xeno Innovations, Inc. 2019
  * Date:    2019-10-6
  * Author:  Damian Suess
- * File:    LiteMigratorExecuteTests.cs
+ * File:    Lite.MigratorExecuteTests.cs
  * Description:
  *  Migration execution tests
  */
@@ -13,17 +13,17 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using SQLite;
-using LiteMigrator.DataObjects;
-using LiteMigrator;
+using Lite.Migrator.DataObjects;
+using Lite.Migrator;
 
-namespace LiteMigrator.SystemTests.Specs;
+namespace Lite.Migrator.SystemTests.Specs;
 
-/// <summary>LiteMigrator Tests.</summary>
+/// <summary>Lite.Migrator Tests.</summary>
 [TestCategory("Database")]
 [TestClass]
 public class MigratorInFileTests : BaseTest
 {
-  private readonly string _baseNamespace = "LiteMigrator.SystemTests.TestData.Scripts";
+  private readonly string _baseNamespace = "Lite.Migrator.SystemTests.TestData.Scripts";
 
   public override void CleanupBeforeTest()
   {

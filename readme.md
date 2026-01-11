@@ -1,24 +1,24 @@
 # SQLite Lite Migrator for cross-platform .NET
 
-<!-- <img align="right" width="90" height="90" src="https://raw.githubusercontent.com/SuessLabs/LiteMigrator/master/docs/logo.png" /> -->
-[![](https://raw.githubusercontent.com/SuessLabs/LiteMigrator/master/docs/logo.png)]()
+<!-- <img align="right" width="90" height="90" src="https://raw.githubusercontent.com/SuessLabs/Lite.Migrator/master/docs/logo.png" /> -->
+[![](https://raw.githubusercontent.com/SuessLabs/Lite.Migrator/master/docs/logo.png)]()
 
-LiteMigrator is a tiny cross-platform SQLite migration framework for .NET applications. This library was built for use with .NET MAUI 🐒, Avalonia, and Uno projects. So it needs to be quick, simple, and reliable when managing databases.
+Lite.Migrator is a tiny cross-platform SQLite migration framework for .NET applications. This library was built for use with .NET MAUI 🐒, Avalonia, and Uno projects. So it needs to be quick, simple, and reliable when managing databases.
 
-**LiteMigrator** takes a "_migrate-up_" approach. In most app deployments, we usually move forward and rarely downgrade (_consider app stores_). This helps keep the library small and nimble. Previously known as, _SQLiteMigrator_.
+**Lite.Migrator** takes a "_migrate-up_" approach. In most app deployments, we usually move forward and rarely downgrade (_consider app stores_). This helps keep the library small and nimble. Previously known as, _SQLite.Migrator_.
 
-[![](https://img.shields.io/nuget/v/LiteMigrator?color=blue)](https://www.nuget.org/packages/LiteMigrator/)
-[![LiteMigrator Docs](https://img.shields.io/badge/docs-litemigrator-blue.svg)](https://github.com/SuessLabs/LiteMigrator/wiki)
+[![](https://img.shields.io/nuget/v/Lite.Migrator?color=blue)](https://www.nuget.org/packages/Lite.Migrator/)
+[![Lite.Migrator Docs](https://img.shields.io/badge/docs-Lite.Migrator-blue.svg)](https://github.com/SuessLabs/Lite.Migrator/wiki)
 
 > Breaking Change from 0.6.x to now:
 >
-> Namespace changed from `Xeno.LiteMigrator` to `LiteMigrator`
+> Namespace changed from `Xeno.Lite.Migrator` to `Lite.Migrator`
 
 Brought to you with nerd-love by [Suess Labs](https://suesslabs.com), sponsored by [Xeno Innovations](https://xenoinc.com).
 
 ## Supported Platforms
 
-Check out the sample project's source code [LiteMigrator.Sample](https://github.com/SuessLabs/LiteMigrator.Sample)
+Check out the sample project's source code [Lite.Migrator.Sample](https://github.com/SuessLabs/Lite.Migrator.Sample)
 
 | Platform | Status |
 |----------|--------|
@@ -31,12 +31,12 @@ Contribute today and get your platform supported 👍
 
 ## How to use it
 
-Get [LiteMigrator](https://www.nuget.org/packages/LiteMigrator) on NuGet today!
+Get [Lite.Migrator](https://www.nuget.org/packages/Lite.Migrator) on NuGet today!
 
 ## Getting Started
-Detailed instructions can be found on the [Using LiteMigrator](https://github.com/SuessLabs/LiteMigrator/wiki/Using-LiteMigrator) wiki page.
+Detailed instructions can be found on the [Using Lite.Migrator](https://github.com/SuessLabs/Lite.Migrator/wiki/Using-Lite.Migrator) wiki page.
 
-1. Add **LiteMigrator** project to your solution
+1. Add **Lite.Migrator** project to your solution
 2. Create a folder in your solution to hold the scripts
 3. Add SQL files as **Embedded Resources**
    * You must use the naming convention, "_YYYYMMDDhhmm-FileName.sql_"
@@ -51,7 +51,7 @@ Detailed instructions can be found on the [Using LiteMigrator](https://github.co
   //    in the namespace `MyProject.Namespace.Scripts`
   // 2. Execute the migrates as follows
   //    This will create the DB in your MAUI app's AppData directory.
-  var dbPath = Path.Combine(FileSystem.AppDataDirectory, "LiteMigrator.db3");
+  var dbPath = Path.Combine(FileSystem.AppDataDirectory, "Lite.Migrator.db3");
   var scriptNamespace = "MyProject.Namespace.Scripts";
 
   using var migrator = new Migrator(dbPath, scriptNamespace);
@@ -63,7 +63,7 @@ Detailed instructions can be found on the [Using LiteMigrator](https://github.co
 ### Use Case - Migration Management
 
 ```cs
-  var dbPath = Path.Combine(FileSystem.AppDataDirectory, "LiteMigrator.db3");
+  var dbPath = Path.Combine(FileSystem.AppDataDirectory, "Lite.Migrator.db3");
   var scriptNamespace = "MyProject.Namespace.Scripts";
 
   using var migrator = new Migrator(dbPath, scriptNamespace);
@@ -100,7 +100,7 @@ public async Task InstallMigrationsAsync()
 
 ## How to Contribute
 
-Give it a test drive and support making LiteMigrator better :)
+Give it a test drive and support making Lite.Migrator better :)
 
 1. Fork on GitHub
 2. Create a branch
@@ -113,4 +113,4 @@ Give it a test drive and support making LiteMigrator better :)
 
 This project could use your assistance to crush any limitations.
 
-Please visit the [Known Limitations](https://github.com/SuessLabs/LiteMigrator/wiki/Known-Limitations) wiki page
+Please visit the [Known Limitations](https://github.com/SuessLabs/Lite.Migrator/wiki/Known-Limitations) wiki page

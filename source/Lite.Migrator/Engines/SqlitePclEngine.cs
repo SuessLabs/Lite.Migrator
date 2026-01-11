@@ -3,12 +3,12 @@
  * Author:  Damian Suess
  * File:    SqlitePclEngine.cs
  * Description:
- *  LiteMigrator using the SQLite-Net-PCL engine
+ *  Lite.Migrator using the SQLite-Net-PCL engine
  */
 
-using LiteMigrator.Versioning;
+using Lite.Migrator.Versioning;
 
-namespace LiteMigrator.Engines;
+namespace Lite.Migrator.Engines;
 
 internal class SqlitePclEngine : IEngine
 {

@@ -9,11 +9,11 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using LiteMigrator.DataObjects;
-using LiteMigrator.Versioning;
+using Lite.Migrator.DataObjects;
+using Lite.Migrator.Versioning;
 using SQLite;
 
-namespace LiteMigrator;
+namespace Lite.Migrator;
 
 /// <summary>Version Factory of LiteMigration.</summary>
 public partial class Migrator
