@@ -1,0 +1,101 @@
+/* Copyright Xeno Innovations, Inc. 2019
+ * Date:    2019-10-6
+ * Author:  Damian Suess
+ * File:    Lite.MigratorExecuteTests.cs
+ * Description:
+ *  Migration execution tests
+ */
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
+using System.Text;
+using System.Threading.Tasks;
+using SQLite;
+using Lite.Migrator.DataObjects;
+using Lite.Migrator;
+
+namespace Lite.Migrator.SystemTests.Specs;
+
+/// <summary>Lite.Migrator Tests.</summary>
+[TestCategory("Database")]
+[TestClass]
+public class MigratorInFileTests : BaseTest
+{
+  private readonly string _baseNamespace = "Lite.Migrator.SystemTests.TestData.Scripts";
+
+  public override void CleanupBeforeTest()
+  {
+    base.CleanupBeforeTest();
+
+    DeleteDatabase();
+  }
+
+  /// <summary>
+  ///   Performs a migration
+  ///   WARNING:
+  ///     This is not the right way to test this!!
+  ///     We should create a new "test" namespace to pull from.
+  /// </summary>
+  /// <returns>Task.</returns>
+  [TestMethod]
+  [DataRow(false)]
+  [DataRow(true)]
+  public async Task InstallMigrationsTestAsync(bool useExecutingAssm)
+  {
+    Assembly? assm = useExecutingAssm ? Assembly.GetExecutingAssembly() : null;
+
+    DeleteDatabase();
+
+    var mig = new Migrator(TempDatabasePath, _baseNamespace, assm);
+
+    var allMigs = mig.Migrations.GetSortedMigrations();
+    var missing = await mig.GetMissingMigrationsAsync();
+
+    Assert.IsTrue(allMigs.Count > 0);
+    Assert.IsNotNull(missing);
+    Assert.AreEqual(allMigs.Count, missing.Count);
+
+    // Act
+    bool success = await mig.MigrateUpAsync();
+
+    // Assert
+    Assert.IsTrue(success, mig.LastError);
+    missing = await mig.GetMissingMigrationsAsync();
+    Assert.AreEqual(0, missing.Count);
+  }
+
+  /// <summary>Gets list of migrations not applied yet.</summary>
+  /// <returns>Task.</returns>
+  [TestMethod]
+  [DataRow(false)]
+  [DataRow(true)]
+  public async Task NotAllMigrationsAreInstalledTestAsync(bool useExecutingAssm)
+  {
+    Assembly? assm = useExecutingAssm ? Assembly.GetExecutingAssembly() : null;
+
+    // Get not installed scripts.
+    // returns sorted list of IMigration with namespace path to resource
+    ClearVersionInfo();
+
+    var mig = new Migrator(TempDatabasePath, _baseNamespace, Assembly.GetExecutingAssembly());
+
+    var allMigs = mig.Migrations.GetSortedMigrations();
+    var missing = await mig.GetMissingMigrationsAsync();
+
+    Assert.IsTrue(allMigs.Count > 0);
+    Assert.IsNotNull(missing);
+    Assert.AreEqual(allMigs.Count, missing.Count);
+  }
+
+  private void ClearVersionInfo()
+  {
+    using (SQLiteConnection db = new SQLiteConnection(TempDatabasePath))
+    {
+      var columnInfo = db.GetTableInfo(nameof(VersionInfo));
+      if (columnInfo.Count > 0)
+        db.DeleteAll<VersionInfo>();
+    }
+  }
+}

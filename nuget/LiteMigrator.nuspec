@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
-    <id>LiteMigrator</id>
+    <id>Lite.Migrator</id>
     <version>1.0.0.0</version>
-    <title>LiteMigrator</title>
+    <title>Lite.Migrator</title>
     <authors>Damian Suess</authors>
     <owners>SuessLabs,DamianSuess,xenoinc</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="file">license.txt</license>
     <icon>logo.png</icon>
-    <projectUrl>https://github.com/SuessLabs/LiteMigrator</projectUrl>
-    <Description>LiteMigrator is a tiny cross-platform SQLite Migration framework. Built for use with .NET MAUI, Avalonia, Uno, etc. So it needs to be quick, simple with a tiny footprint.</Description>
+    <projectUrl>https://github.com/SuessLabs/Lite.Migrator</projectUrl>
+    <Description>Lite.Migrator is a tiny cross-platform SQLite Migration framework. Built for use with .NET MAUI, Avalonia, Uno, etc. So it needs to be quick, simple with a tiny footprint.</Description>
     <releaseNotes>Light weight SQLite migration utility</releaseNotes>
     <copyright>Copyright 2025 Xeno Innovations, Inc.</copyright>
-    <tags>LiteMigrator, sqlite, lite migrator, database, migration, fluent database migration, maui, linux, xamarin, avalonia, uno.</tags>
-    <repository type="git" url="https://github.com/SuessLabs/LiteMigrator" />
+    <tags>Lite.Migrator, sqlite, lite migrator, database, migration, fluent database migration, maui, linux, xamarin, avalonia, uno.</tags>
+    <repository type="git" url="https://github.com/SuessLabs/Lite.Migrator" />
     <dependencies>
       <group targetFramework=".NETStandard2.0">
         <dependency id="sqlite-net-pcl" version="1.9.172" exclude="Build,Analyzers" />
