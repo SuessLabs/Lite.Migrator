@@ -1,18 +1,16 @@
-# SQLite Lite Migrator for cross-platform .NET
+# Lite Migrator for SQLite
 
 <!-- <img align="right" width="90" height="90" src="https://raw.githubusercontent.com/SuessLabs/Lite.Migrator/master/docs/logo.png" /> -->
 [![](https://raw.githubusercontent.com/SuessLabs/Lite.Migrator/master/docs/logo.png)]()
 
-Lite.Migrator is a tiny cross-platform SQLite migration framework for .NET applications. This library was built for use with .NET MAUI 🐒, Avalonia, and Uno projects. So it needs to be quick, simple, and reliable when managing databases.
+Lite.Migrator is a tiny cross-platform SQLite migration framework for .NET applications. This library was built for speed and flexibility so you can quickly stand-up and reliably deliver scalable database solutions.
+
+Use it with your container app or mobile development (_.NET MAUI 🐒, Avalonia, Uno, etc._) projects.
 
 **Lite.Migrator** takes a "_migrate-up_" approach. In most app deployments, we usually move forward and rarely downgrade (_consider app stores_). This helps keep the library small and nimble. Previously known as, _SQLite.Migrator_.
 
 [![](https://img.shields.io/nuget/v/Lite.Migrator?color=blue)](https://www.nuget.org/packages/Lite.Migrator/)
 [![Lite.Migrator Docs](https://img.shields.io/badge/docs-Lite.Migrator-blue.svg)](https://github.com/SuessLabs/Lite.Migrator/wiki)
-
-> Breaking Change from 0.6.x to now:
->
-> Namespace changed from `Xeno.Lite.Migrator` to `Lite.Migrator`
 
 Brought to you with nerd-love by [Suess Labs](https://suesslabs.com), sponsored by [Xeno Innovations](https://xenoinc.com).
 
@@ -41,8 +39,6 @@ Detailed instructions can be found on the [Using Lite.Migrator](https://github.c
 3. Add SQL files as **Embedded Resources**
    * You must use the naming convention, "_YYYYMMDDhhmm-FileName.sql_"
 4. Wire-up the controller
-
-
 
 ### Use Case - .NET MAUI Basic Example
 
@@ -114,3 +110,20 @@ Give it a test drive and support making Lite.Migrator better :)
 This project could use your assistance to crush any limitations.
 
 Please visit the [Known Limitations](https://github.com/SuessLabs/Lite.Migrator/wiki/Known-Limitations) wiki page
+
+## History
+
+### v0.9.0
+
+* Tidy-up namespace formatting
+* Update URLs
+* MigrationFactory Stores the Supplied Assembly
+* Rename main class to Migration
+* Default Assembly in CTR to use Calling Assembly
+* Updated readme and changelog with the latest notes
+
+### v0.6.x
+
+* Update Parser to Search Specific Namespace
+* Disposable
+* Namespace changed from `Xeno.LiteMigrator` to `LiteMigrator`

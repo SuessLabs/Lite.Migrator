@@ -1,5 +1,9 @@
 # LiteMigrator Change Log
 
+## v1.0.0
+
+* Updated namespace to, Lite.Migrator (_from, LiteMigrator_)
+
 ## v0.9.0
 
 Breaking Changes:
@@ -9,6 +13,7 @@ Breaking Changes:
   * This fixes loading migrations on Android
   * Fixes choosing alternate DLL containing migration scripts during AOT.
 * [NEW] Calling Assembly is used by default if not provided in the constructor.
+* [Update] MigrationFactory stores the supplied assembly
 
 ## v0.8.0
 
